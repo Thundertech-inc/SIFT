@@ -1,0 +1,84 @@
+#if (!gs_shader) && (!gs_compute)
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Networking;
+using System;
+using System.Linq;
+using System.Net.Sockets;
+using System.Net;
+using GSharp;
+#if (UNITY_EDITOR)
+using UnityEditor;
+#endif
+
+[TAtt("Sift|Sift")] // 2020/04/06 05:13:51 PM
+public class gsSift : GS
+{
+  #region Generated Code
+  // <<<<< G# Libraries
+  // G# Libraries >>>>>
+  // <<<<< G# Enums
+  // G# Enums >>>>>
+  // <<<<< G# cFields
+  // G# cFields >>>>>
+  // <<<<< G# ExecuteInEditor
+  // G# ExecuteInEditor >>>>>
+  // <<<<< G# G_property
+  // G# G_property >>>>>
+  // <<<<< G# kernelWrappers
+  // G# kernelWrappers >>>>>
+  // <<<<< G# AssignEnums
+  // G# AssignEnums >>>>>
+  // <<<<< G# AssignConsts;
+  // G# AssignConsts >>>>>
+  #endregion Generated Code
+  void OnGUI()
+  {
+    // <<<<< G# UpdateActions
+    //if (ValuesChanged) { OnValueChanged(); ValuesChanged = false; }
+    // G# UpdateActions >>>>>
+    // <<<<< G# onGui
+    if (!isEditor) return;
+    InitFields();
+    // G# onGui >>>>>
+  }
+  // <<<<< G# Actions
+  // G# Actions >>>>>
+  public static gsSift This;
+  void Awake()
+  {
+    This = this;
+    InitFields();
+  }
+
+  public override void onLoaded()
+  {
+    base.onLoaded();
+    InitBuffers();
+  }
+  // <<<<< G# ActionMethods
+  public void OnValueChanged() 
+  {
+    // ***************** Specify action when field value changes ***********************
+  }
+  // G# ActionMethods >>>>>
+  
+  void InitBuffers()
+  {
+    // <<<<< G# InitBuffers
+    //var g = G;
+    //G = g;
+    // G# InitBuffers >>>>>
+  }
+  #endif //!gs_compute && !gs_shader //variables in both compute shader and material shader
+  //public Texture2D gQuadTexture;
+  // <<<<< G# compute_or_material_shader
+  // G# compute_or_material_shader >>>>>
+#if (!gs_shader)
+  // <<<<< G# kernels
+  // G# kernels >>>>>
+#endif //!gs_shader
+#if (!gs_compute) && (!gs_shader)
+  }
+#endif
+  

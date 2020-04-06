@@ -1,0 +1,7 @@
+//update 1
+#include "../GS/GS_Compute.cginc"
+#include "gsSift.cginc"
+#include "gsSift.cs"
+
+  #pragma kernel gSift_Step1_ExtremaDetection
+  
